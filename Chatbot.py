@@ -3,12 +3,12 @@ import openai
 import gradio as gr
 share=True
 
-openai.api_key = "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"
+openai.api_key = "API KEY"
 
 start_sequence = "\nAI:"
 restart_sequence = "\nHuman: "
 
-prompt="The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.\n\nHuman: Hello, who are you?\nAI: I am an AI created by OpenAI. How can I help you today?\nHuman: ",
+prompt="The following is a conversation with an AI assistant.",
 def openai_create(prompt):
     response = openai.Completion.create(
     model="text-davinci-003",
